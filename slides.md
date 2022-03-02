@@ -5,7 +5,7 @@ Steven Clontz | University of South Alabama
 
 Spring Topology and Dynamics Conference 2022
 
-Joint work with Will Brian
+Joint work with Will Brian | Slides at [clontz.org](https://clontz.org)
 
 ---
 
@@ -89,7 +89,7 @@ limited information strategies.
     For each partial playthrough \\(t\\), define
     \\[E_t = \\{x\\text{ legal}|a&lt;x\\Rightarrow\\sigma(t^\\frown\\langle{a}\\rangle)\\leq x\\}\\]
 -   <!-- .element: class="fragment" -->
-    \\(E_t\\) cannot contain bounded infinite subsequences, as Alice picking infimum
+    \\(E_t\\) cannot contain bounded decreasing subsequences, as Alice picking infimum
     creates a contradiction.
 -   <!-- .element: class="fragment" -->
     For \\(w\\) not in \\(\bigcup_t E_t\\) (countable), Alice can ensure \\(w\\) remains legal
@@ -112,7 +112,7 @@ limited information strategies.
     For each partial playthrough \\(t\\), define
     \\[E_t = \\{x\\text{ legal}|a&lt;x\\Rightarrow\\sigma(t^\\frown\\langle{a}\\rangle)\\leq x\\}\\]
 -   <!-- .element: class="" -->
-    \\(E_t\\) cannot contain bounded infinite subsequences, as Alice picking infimum
+    \\(E_t\\) cannot contain bounded decreasing subsequences, as Alice picking infimum
     creates a contradiction.
 -   <!-- .element: class="" -->
     For \\(w\\) not in \\(\bigcup_t E_t\\) (countable), Alice can ensure \\(w\\) remains legal
@@ -136,7 +136,7 @@ limited information strategies.
     For each partial playthrough \\(t\\), define
     \\[E_t = \\{x\\text{ legal}|a&lt;x\\Rightarrow\\sigma(t^\\frown\\langle{a}\\rangle)\\leq x\\}\\]
 -   <!-- .element: class="" -->
-    \\(E_t\\) is cannot contain bounded infinite subsequences, as 
+    \\(E_t\\) is cannot contain bounded decreasing subsequences, as 
     **Alice picking infimum**<!-- .element: style="color:cyan" -->
     creates a contradiction.
 -   <!-- .element: class="" -->
@@ -155,7 +155,8 @@ limited information strategies.
     <p>
 "We can just use a countable elementary submodel."
     </p>
-    <iframe src="https://giphy.com/embed/v9rfTQBNqdsSA" width="480" height="259" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p style="font-size:0.5em"><a href="https://giphy.com/gifs/csi-deal-with-it-sunglasses-v9rfTQBNqdsSA">via GIPHY</a></p>
+</div>
+<div class="fragment"><iframe src="https://giphy.com/embed/vNrFmUK6KZMPK" width="480" height="339" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p style="font-size:0.5em"><a href="https://giphy.com/gifs/fonzie-the-fonz-gif-stories-vNrFmUK6KZMPK">via GIPHY</a></p>
 </div>
 
 ---
@@ -254,7 +255,7 @@ limited information strategies.
     Then 
     \\[A=\\{a\\in(\\alpha,r)| \\sigma(t^\\frown\\langle{a\\rangle})\\in(s,\\beta)\\}\\]
     is a set \\(M\\) understands, since \\(A\\) is defined in terms of 
-    \\(\\alpha,r,\\sigma,t,s\\in M\\).
+    \\(\\alpha,r,\\sigma,t,s,\\beta\\in M\\).
 -   <!-- .element: class="fragment" -->
     Observe that
     \\(A\\not=\\emptyset\\)
@@ -284,4 +285,98 @@ limited information strategies.
 
 </div>
 
+---
 
+## For the Skeptics
+### A proof without submodels <!-- .element: class="fragment" -->
+
+<div style="font-size:0.9em">
+
+-   <!-- .element: class="fragment" -->
+    We'll need this result from STDC 2021:
+    Bob has a winning strategy
+    if and only if he has a winning *coding* strategy:
+    defined only in terms of the most recent move of
+    each player.
+    -   <!-- .element: class="fragment" -->
+        "Coding" comes from the fact that Bob can create
+        such strategies from perfect-info strats by
+        *encoding* all of Alice's previous moves into his
+        own moves.
+-   <!-- .element: class="fragment" -->
+    So now we need only show that Alice can defeat any
+    coding strategy for Bob given an uncountable \\(W\\).
+
+</div>
+
+---
+
+## Steven's Proof 1/2
+
+<div style="font-size:0.9em">
+
+-   <!-- .element: class="fragment" -->
+    Let \\(\\sigma\\) be a coding strategy for Bob that only uses rationals.
+-   <!-- .element: class="fragment" -->
+    For each \\(q\\in\\mathbb Q\\) and \\(\\beta\\in\\mathbb Q\\cup\\{\\infty\\}\\), define
+    \\[E_{q,\\beta} = \\{x\\text{ legal}|a\\in(q,\\beta)\\Rightarrow\\sigma(\\beta,a)\\leq x\\}\\]
+-   <!-- .element: class="fragment" -->
+    \\(E_{q,\\beta}\\) cannot contain bounded decreasing subsequences, as \\(a=\\inf\\)
+    creates a contradiction.
+-   <!-- .element: class="fragment" -->
+    Suppose \\(w\not\in \\bigcup_{q,\\beta} E_{q,\\beta}\\) (countable). We will describe how Alice ensures
+    \\(w\\) remains legal throughout the game, defeating \\(\\sigma\\).
+
+</div>
+
+---
+
+## Steven's Proof 2/2
+
+<div style="font-size:0.9em">
+
+-   <!-- .element: class="" -->
+    Suppose Alice has successfully played the game up to a certain round,
+    where \\(\\alpha,\\beta\\) were played most recently, and \\(w\\) remains legal,
+    that is, \\(\\alpha&lt;w&lt;\\beta\\).
+-   <!-- .element: class="fragment" -->
+    Pick \\(q\\in\\mathbb Q\\) with \\(\\alpha&lt;q&lt;w&lt;\\beta\\).
+-   <!-- .element: class="fragment" -->
+    Since
+    \\[w\\not\\in E_{q,\\beta} = \\{x\\text{ legal}|a\\in(q,x)\\Rightarrow\\sigma(\\beta,a)\\leq x\\}\\]
+    there exists \\(a\\in(q,w)\\) such that \\(\\sigma(\\beta,a)&gt; w\\).
+-   <!-- .element: class="fragment" -->
+    Note \\(a\\) is legal, and results in \\(a&lt;w&lt;\\sigma(\\beta,a)\\),
+    completing the induction.
+    
+</div>
+
+---
+
+## Thoughts and Observations
+
+<div style="font-size:0.9em">
+
+-   <!-- .element: class="fragment" -->
+    My proof was shorter, but only because I factored out the complexity
+    to the lemma "coding \\(\Leftrightarrow\\) perfect-info".
+-   <!-- .element: class="fragment" -->
+    The complexity was needed to exchange \\(a'\\) with \\(a\\)
+    from a nice countable set in this inequality:
+    \\[\\alpha &lt;a'&lt;w&lt;\\sigma(t^\\frown\\langle{a'\\rangle})&lt;\\beta\\]
+    Perhpas this could have similarly been factored out to a lemma?
+-   <!-- .element: class="fragment" -->
+    Limited-info strategies can be used to clean up
+    recursive arguments similar to using submodels.
+
+</div>
+
+---
+
+## Your thoughts and observations
+
+---
+
+# THANK YOU!
+
+Slides at [clontz.org](https://clontz.org)
