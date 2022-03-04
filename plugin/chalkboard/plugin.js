@@ -386,8 +386,8 @@ console.warn( "toggleNotesButton is deprecated, use customcontrols plugin instea
 		for ( var i = 0; i < length; i++ ) {
 			var colorButton = document.createElement( 'li' );
 			colorButton.setAttribute( 'data-color', i );
-			colorButton.innerHTML = '<i class="fa fa-square"></i>';
-			colorButton.style.color = colors[ i ].color;
+			colorButton.innerHTML = '<div style="width:1.5em;height:1.5em;"></div>';
+			colorButton.style.backgroundColor = colors[ i ].color;
 			colorButton.addEventListener( 'click', function ( e ) {
 				var element = e.target;
 				while ( !element.hasAttribute( 'data-color' ) ) {
@@ -471,7 +471,7 @@ console.warn( "toggleNotesButton is deprecated, use customcontrols plugin instea
 			if ( boardHandle ) {
 				var handle = document.createElement( 'div' );
 				handle.classList.add( 'boardhandle' );
-				handle.innerHTML = '<ul><li><a id="previousboard" href="#" title="Previous board"><i class="fas fa-chevron-up"></i></a></li><li><a id="nextboard" href="#" title="Next board"><i class="fas fa-chevron-down"></i></a></li></ul>';
+				handle.innerHTML = '<ul><li><a id="previousboard" href="#" title="Previous board">▲</a></li><li><a id="nextboard" href="#" title="Next board">▼</a></li></ul>';
 				handle.querySelector( '#previousboard' ).addEventListener( 'click', function ( e ) {
 					e.preventDefault();
 					switchBoard( board - 1 );
