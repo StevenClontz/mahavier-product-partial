@@ -41,8 +41,8 @@ limited information strategies.
   for [Mathematics Magazine problem #1542][MathMagProb], which was
   solved by Newcomb in [1999][MathMagSol].
 
-[MathMagProb]: #todo
-[MathMagSol]: #todo
+[MathMagProb]: https://www.jstor.org/stable/i326797
+[MathMagSol]: https://www.jstor.org/stable/i326802
 
 ---
 
@@ -58,7 +58,7 @@ limited information strategies.
       perfect) are uncountable.
       <!-- .element: class="fragment" -->
 
-[MathMagBaker]: https://www.tandfonline.com/doi/abs/10.1080/0025570X.2007.11953513
+[MathMagBaker]: https://www.jstor.org/stable/27643064
 
 ---
 
