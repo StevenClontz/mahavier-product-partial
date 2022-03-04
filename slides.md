@@ -1,9 +1,9 @@
 # Counting the Uncountable
 ### or, How I Learned to Stop Worrying and Love Elementary Submodels
 
-Steven Clontz | University of South Alabama
+**Spring Topology and Dynamics Conference 2022**
 
-Spring Topology and Dynamics Conference 2022
+Steven Clontz | University of South Alabama
 
 Joint work with Will Brian | Slides at [clontz.org](https://clontz.org)
 
@@ -175,19 +175,20 @@ limited information strategies.
 
 ## So what do we need to know?
 
-<div style="font-size:0.9em">
+<div style="font-size:0.8em">
 
 -   <!-- .element: class="fragment" -->
     While there are uncountable sets, any proof (whether written in English letters
-    or formalized) is finite.
+    or formalized) is finite, and so there are only countably-many possible proofs.
 -   <!-- .element: class="fragment" -->
     So perhaps this result, a consequence of Löwenheim-Skolem theorem, isn't too surprising:
+    -   <!-- .element: class="" -->
+        Given a countable set \\(S\\) in your universe of sets, there exists a
+        countable set \\(M\\supseteq S\\) in your universe
+        such that any statement* about things defined for \\(M\\)
+        is true in your universe if and only if \\(M\\) witnesses its truth.
     -   <!-- .element: class="fragment" -->
-        Given a finite set \\(S\\), there exists a countable set \\(M\\supseteq S\\)
-        such that "\\(M\\) can prove any statement that's true under ZFC and defined
-        for \\(M\\)".
-        (That is, \\(M\\) is a countable elementary submodel for ZFC.)
-
+        That is, \\(M\\) is a countable elementary submodel for your universe.
 </div>
 
 ---
@@ -197,8 +198,8 @@ limited information strategies.
 <div style="font-size:0.9em">
 
 -   <!-- .element: class="fragment" -->
-    Fix a countable elementary submodel \\(M\\) containing
-    Bob's strategy \\(\sigma\\) (note that \\(\\mathbb Q\\subseteq M\\)).
+    Fix a countable elementary submodel \\(M\\) of our universe that contains
+    Bob's strategy \\(\sigma\\) and the rationals.
 -   <!-- .element: class="fragment" -->
     Then consider
     \\[E_t = \\{x\\text{ legal}|a&lt;x\\Rightarrow\\sigma(t^\\frown\\langle{a}\\rangle)\\leq x\\}\\]
@@ -229,19 +230,20 @@ limited information strategies.
 
 ## Will's proof 3/5
 
-<div style="font-size:0.8em">
+<div style="font-size:0.75em">
 
 -   <!-- .element: class="" -->
     Let \\(\\alpha,\\beta\\in M\\) be the last moves of Alice and Bob, respectfully.
     We now have the following reals
     \\[\\alpha &lt;a'&lt;w&lt;\\sigma(t^\\frown\\langle{a'\\rangle})&lt;\\beta\\]
-    where \\(a',w,\\sigma(t^\\frown\\langle{a'\\rangle})\\) may be unknown to \\(M\\).
+    where \\(a',w,\\sigma(t^\\frown\\langle{a'\\rangle})\\) may not belong to \\(M\\).
 -   <!-- .element: class="fragment" -->
     Choose \\(r,s\\in \\mathbb Q\\subseteq M\\) with 
     \\[\\alpha &lt;a'&lt;r&lt;w&lt;s&lt;\\sigma(t^\\frown\\langle{a'\\rangle})&lt;\\beta\\]
 -   <!-- .element: class="fragment" -->
     Consider the set
     \\[A=\\{a\\in(\\alpha,r)| \\sigma(t^\\frown\\langle{a\\rangle})\\in(s,\\beta)\\}\\]
+    such that \\(a'\\in A\\).
 
 </div>
 
@@ -249,7 +251,7 @@ limited information strategies.
 
 ## Will's proof 4/5
 
-<div style="font-size:0.9em">
+<div style="font-size:1em">
 
 -   <!-- .element: class="" -->
     Then 
@@ -259,10 +261,9 @@ limited information strategies.
 -   <!-- .element: class="fragment" -->
     Observe that
     \\(A\\not=\\emptyset\\)
-    is true in ZFC since \\(a'\\in A\\):
-    \\[\\alpha &lt;a'&lt;r&lt;w&lt;s&lt;\\sigma(t^\\frown\\langle{a'\\rangle})&lt;\\beta\\]
+    is true in our universe since \\(a'\\in A\\).
 -   <!-- .element: class="fragment" -->
-    Thus \\(M\\) can prove \\(A\\not=\\emptyset\\) as well, which means there exists
+    Thus \\(M\\) witnesses \\(A\\not=\\emptyset\\), which means there exists
     \\(a\\in M\\) such that \\(a\\in A\\).
 
 </div>
@@ -288,7 +289,7 @@ limited information strategies.
 ---
 
 ## For the Skeptics
-### A proof without submodels <!-- .element: class="fragment" -->
+### A proof without submodels
 
 <div style="font-size:0.9em">
 
@@ -299,10 +300,10 @@ limited information strategies.
     defined only in terms of the most recent move of
     each player.
     -   <!-- .element: class="fragment" -->
-        "Coding" comes from the fact that Bob can create
+        ("Coding" comes from the fact that Bob can create
         such strategies from perfect-info strats by
         *encoding* all of Alice's previous moves into his
-        own moves.
+        own moves.)
 -   <!-- .element: class="fragment" -->
     So now we need only show that Alice can defeat any
     coding strategy for Bob given an uncountable \\(W\\).
@@ -318,7 +319,7 @@ limited information strategies.
 -   <!-- .element: class="fragment" -->
     Let \\(\\sigma\\) be a coding strategy for Bob that only uses rationals.
 -   <!-- .element: class="fragment" -->
-    For each \\(q\\in\\mathbb Q\\) and \\(\\beta\\in\\mathbb Q\\cup\\{\\infty\\}\\), define
+    For each \\(q,\\beta\\in\\mathbb Q\\), define
     \\[E_{q,\\beta} = \\{x\\text{ legal}|a\\in(q,\\beta)\\Rightarrow\\sigma(\\beta,a)\\leq x\\}\\]
 -   <!-- .element: class="fragment" -->
     \\(E_{q,\\beta}\\) cannot contain bounded decreasing subsequences, as \\(a=\\inf\\)
@@ -364,7 +365,7 @@ limited information strategies.
     The complexity was needed to exchange \\(a'\\) with \\(a\\)
     from a nice countable set in this inequality:
     \\[\\alpha &lt;a'&lt;w&lt;\\sigma(t^\\frown\\langle{a'\\rangle})&lt;\\beta\\]
-    Perhpas this could have similarly been factored out to a lemma?
+    Perhaps this could have similarly been factored out to a lemma?
 -   <!-- .element: class="fragment" -->
     Limited-info strategies can be used to clean up
     recursive arguments similar to using submodels.
