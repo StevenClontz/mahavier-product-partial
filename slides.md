@@ -1,11 +1,11 @@
 # Counting the Uncountable
 ### or, How I Learned to Stop Worrying and Love Elementary Submodels
 
-**Spring Topology and Dynamics Conference 2022**
+**[STDC 2022 @ Baylor University](https://sites.baylor.edu/topology-conference)**
 
 Steven Clontz | University of South Alabama
 
-Joint work with Will Brian | Slides at [clontz.org](https://clontz.org)
+*Joint work with Will Brian* | *Slides at* [clontz.org](https://clontz.org)
 
 ---
 
@@ -64,15 +64,16 @@ limited information strategies.
 
 ## Baker's Question
 
-- The proof that Bob wins for a countable set \\(W\\) is pretty quick:
-    - Enumerate \\(W=\\{w_n:n&lt;\omega\\}\\), and on Bob's \\(n\\)th move
-      he can play a number that prevents \\(w_n\\) from being between
-      their moves at the end of the game.
-      <!-- .element: class="fragment" -->
-- Does there exist an uncountable set \\(W\\) that allows Bob a winning
-  strategy?
-    - Will Brian emailed me in January: Nope.
-      <!-- .element: class="fragment" -->
+-   The proof that Bob wins for a countable set \\(W\\) is pretty quick:
+    -   <!-- .element: class="fragment" -->
+        Enumerate \\(W=\\{w_n:n&lt;\omega\\}\\), and on Bob's \\(n\\)th move
+        he can play a number that prevents \\(w_n\\) from being between
+        their moves at the end of the game.
+-   <!-- .element: class="fragment" -->
+    Does there exist an uncountable set \\(W\\) that allows Bob a winning
+    strategy?
+    - <!-- .element: class="fragment" -->
+        Will Brian emailed me in January: Nope.
 
 ---
 <!-- .slide: data-transition="slide-in fade-out" -->
@@ -136,7 +137,7 @@ limited information strategies.
     For each partial playthrough \\(t\\), define
     \\[E_t = \\{x\\text{ legal}|a&lt;x\\Rightarrow\\sigma(t^\\frown\\langle{a}\\rangle)\\leq x\\}\\]
 -   <!-- .element: class="" -->
-    \\(E_t\\) is cannot contain bounded decreasing subsequences, as 
+    \\(E_t\\) cannot contain bounded decreasing subsequences, as 
     **Alice picking infimum**<!-- .element: style="color:cyan" -->
     creates a contradiction.
 -   <!-- .element: class="" -->
@@ -288,8 +289,7 @@ limited information strategies.
 
 ---
 
-## For the Skeptics
-### A proof without submodels
+## How can you do this kind of thing without submodels?
 
 <div style="font-size:0.9em">
 
