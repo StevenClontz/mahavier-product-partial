@@ -392,7 +392,7 @@ limited information strategies.
     Let \\(\\sigma\\) be a *coding* strategy for Bob that only uses rationals.
 -   <!-- .element: class="fragment" -->
     For each \\(q,\\beta\\in\\mathbb Q\\), define
-    \\[E_{q,\\beta} = \\{x\\text{ legal}|a\\in(q,\\beta)\\Rightarrow\\sigma(\\beta,a)\\leq x\\}\\]
+    \\[E_{q,\\beta} = \\{x\\text{ legal}|a\\in(q,x)\\Rightarrow\\sigma(\\beta,a)\\leq x\\}\\]
 -   <!-- .element: class="fragment" -->
     \\(E_{q,\\beta}\\) cannot contain bounded decreasing subsequences, as \\(a=\\inf\\)
     creates a contradiction.
