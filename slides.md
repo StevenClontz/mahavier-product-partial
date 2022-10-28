@@ -28,15 +28,7 @@ We will show that whenever \\(f\\) satisfies condition \\(\\Gamma\\),
 
 ---
 
-## Example 2/4: 
-
-\\(\\maProd{I,\\nu,\\omega}\\cong\\,\\textcolor{gray}{???}\\)
-
-<div style="height:45vh"></div>
-
----
-
-## Example 3/4: 
+## Example 2/3: 
 
 \\(\\maProd{I,\\gamma,\\omega_1}\\cong\\,\\textcolor{gray}{???}\\)
 
@@ -44,7 +36,7 @@ We will show that whenever \\(f\\) satisfies condition \\(\\Gamma\\),
 
 ---
 
-## Example 4/4: 
+## Example 3/3: 
 
 \\(\\maProd{I,\\gamma,I}\\cong\\,\\textcolor{gray}{???}\\)
 
@@ -84,7 +76,7 @@ the following identifications.
 
 ---
 
-## Example 5/4: 
+## Example 4/3: 
 
 \\(\\maProd{I,\\gamma,\\mathbb Q}\\cong\\,\\textcolor{gray}{???}\\)
 
@@ -92,7 +84,7 @@ the following identifications.
 
 ---
 
-## Example 6/4: 
+## Example 5/3: 
 
 \\(\\maProd{I,\\gamma,2^{&lt;\\omega}}\\cong\\,\\textcolor{gray}{???}\\)
 
