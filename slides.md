@@ -46,16 +46,19 @@ We will show that whenever \\(f\\) satisfies condition \\(\\Gamma\\),
 
 ## Definitions
 
+<div style="font-size:0.8em">
+
 For a partial order \\(Q\\), let \\(\\check Q\subseteq \\mathcal P(Q)\\)
 be its leftward subsets, that is, \\(b\leq a\\in A\\Rightarrow b\\in A\\)
 for each \\(A\\in\\check Q\\)
 
 Then \\(\check Q\\) is partially ordered by \\(\\subseteq\\) and contains
-the subset \\(Q'=\\{(\\leftarrow,q]:q\\in Q\\}\\) order-isomorphic to \\(Q\\).
-
+the subset \\[Q'=\\{(\\leftarrow,q]:q\\in Q\\}\\] order-isomorphic to \\(Q\\).
 Also, \\(\check Q\\) contains the subset
-\\(\\hat Q=\\{A\\in\\check Q:A\\text{ is closed in }Q\\}\\) order-isomorphic
+\\[\\hat Q=\\{A\\in\\check Q:A\\text{ is closed in }Q\\}\\] order-isomorphic
 to the Dedekind[-ish*](https://en.wikipedia.org/wiki/Dedekind%E2%80%93MacNeille_completion) completion of \\(L\\).
+
+</div>
 
 ---
 
@@ -194,6 +197,149 @@ compact metrizable if and only if \\(P\\) is countable.
       \\(\\maProd{X,f,P}\\).
 
 </div>
+
+---
+
+## What else am I working on?
+
+Glad you asked!
+
+---
+
+## Team-Based Inquiry Learning
+
+<img width="45%" src="./tbil-calc.png">
+<img width="45%" src="./tbil-linear.png">
+
+<https://teambasedinquirylearning.github.io>
+
+Supported by [NSF EDU #2011807](https://nsf.gov/awardsearch/showAward?AWD_ID=2011807)
+
+---
+
+<img src="./tbil.jpg">
+
+---
+
+## TBIL Project Highlights
+
+<div style="font-size:0.9em">
+
+- Adapts Inquiry-Based Learning into format accessible to
+  100/200-level math courses.
+
+- Team structure emulates small class size within larger classroom.
+
+- High-quality [TBIL Resource Library](https://sites.google.com/southalabama.edu/tbil/tbil-resource-library)
+  provides in-class activities ([PreTeXt](https://pretextbook.org)) 
+  and randomized exercises ([CheckIt](https://checkit.clontz.org)) for implementing TBIL.
+
+- Research/evaluation on around 30 instructors around country trained/implementing TBIL is ongoing.
+
+</div>
+
+---
+
+## My focus: cyberinfrastructure
+
+<div style="font-size:0.9em">
+
+Technology lowers the barrier for novel teaching practices.
+
+-   [PreTeXt](https://pretextbook.org): XML language that produces
+    accessible HTML, printable PDF, tactile braille, and more from
+    a single source.
+
+-   [CheckIt](https://checkit.clontz.org): framework to author
+    randomized exercises using SageMath programming language, deployed
+    to static HTML/JS to produce LaTeX/PDF, or in LMS quizzes.
+
+-   [Scratchee](https://scratchee.clontz.org): web app to provide
+    free mechanism for employing Instant Feedback Assessment Technique.
+
+</div>
+
+---
+
+## The Problem
+
+Who creates this infrastructure?
+
+<div style="font-size:0.9em">
+
+-   <!-- .element: class="fragment" -->
+    Private industry
+    -   focus on profit, not learning, accessibility...
+
+-   <!-- .element: class="fragment" -->
+    Educators / Edu Researchers
+    -   generally lack expertise to create high-quality software products
+
+-   <!-- .element: class="fragment" -->
+    Content-area scholars
+    -   if they have expertise, they generally lack incentive
+
+</div>
+
+---
+
+## Enter NSF TIP and POSE
+
+<div style="font-size:0.8em">
+
+<div class="fragment">
+
+### Directorate for Technology, Innovation and Partnerships (TIP)
+
+A new (Spring 2022) NSF directorate that "creates breakthrough technologies; meets societal and economic needs;
+leads to new, high-wage jobs; and empowers all Americans to participate in the U.S. research and innovation enterprise."
+
+</div>
+<div class="fragment">
+
+### Pathways to Enable Open-Source Ecosystems (POSE)
+
+A new (Spring 2022) solicitation for "harnessing the power of open-source development for the creation of new technology solutions
+to problems of national and societal importance."
+
+</div>
+
+</div>
+
+---
+
+## PreTeXt-Runestone OSE
+
+<img class="r-stretch" src="./prose-ecosystem.png">
+
+<https://prose.runestone.academy>
+
+Supported by [NSF TIP #2230153](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2230153)
+
+---
+
+<img class="r-stretch" src="./prose-process.png">
+
+---
+
+## PROSE 2023 activities
+
+- Roundtables with stakeholders
+- Webinars and virtual office hours to onboard new members to community
+- Organizing Workshop June 12-16 in Mobile
+- Phase II proposal (two years, $1.5M) due in Fall
+
+---
+
+## Future Work
+
+How can mathematics **research** be enchanced through better
+cyberinfrastucture?
+
+- Next-generation documents (PreTeXt)
+- Semantically-searchable databases (OEIS, LMFDB, [pi-Base](https://topology.pi-base.org))
+- Confernece organizing (Topology Atlas)
+- Integration of formalized mathematics in all of the above
 
 ---
 
